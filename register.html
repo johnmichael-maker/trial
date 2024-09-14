@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS 365 Account Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #dc3545, #dc3545);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 250px;
+            margin-right: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            text-align: center;
+        }
+        .form-container h2 {
+            color: #0072ff;
+        }
+        .form-container p {
+            margin-bottom: 20px;
+        }
+        .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" class="back-button">&#8592;</a>
+
+    <div class="container">
+        <img src="logo.png" alt="College Logo" class="logo">
+        <div class="form-container">
+            <h2>MS 365 Account Verification</h2>
+            <p>Enter your MS 365 Username account to receive a registration link.</p>
+            <form action="submit_registration.php" method="post">
+                <input type="email" name="ms_email" placeholder="MS 365 Email" required>
+                <input type="submit" value="Send Registration Link">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
